@@ -1,0 +1,32 @@
+<%- include('partials/header') %>
+
+
+<div class="jumbotron centered">
+  <div class="container">
+    <i class="fas fa-key fa-6x"></i>
+    <!-- <i class="fa fa-handshake-o" aria-hidden="true"></i> -->
+    <!-- <img src="public/icons8-front-desk-16.png"> -->
+    <!-- <link type="image/png" rel="icon" href=".../icons8-front-desk-16.png"> -->
+    <h1 class="display-3">Eceptionist</h1>
+    <!-- <p class="lead">How may I help you?</p> -->
+    <br>
+    <br>
+    <!--  -->
+    
+
+
+    <a class="btn btn-light btn-lg" href="#" role="button" id="sound">Excuse me!</a>
+    <script>
+      document.querySelector(".sound").addEventListener("click", function() {
+        var audio = new Audio("public/sounds/1649505541152-voicemaker.in-speech.mp3");
+        audio.play();
+      });
+    </script>
+    <hr>
+    <a class="btn btn-light btn-lg" href="/register" role="button">Register</a>
+    <a class="btn btn-dark btn-lg" href="/login" role="button">Login</a>
+
+  </div>
+</div>
+
+<%- include('partials/footer') %>
